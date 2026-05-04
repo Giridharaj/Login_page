@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- web icon -->
+    <link rel="Website Icon" href="logo.jpg">
+    <title>Login Form - Scenery</title>
+    <!--fonts -->
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="prologue">
+            <img src="login_icon.jpeg" alt="icon">
+        </div>
+        <h3>Login</h3>
+        <form action="submit.html" method="POST">
+            <div class="input-box">
+                <label for="email" id="email">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <i class="fa-regular fa-envelope" style="color: rgb(241, 241, 244);"></i>
+                </label>
+            </div>
+            <div class="input-box">
+                <label for="password" id="password">
+                    <input type="password" name="password" placeholder="Password" required>
+                    <i class="fa-solid fa-lock" style="color: rgb(239, 239, 241);"></i>
+                </label>
+            </div>
+            <div class="remember-forgot">
+                <label for="check"><input type="checkbox">Remember Me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button onclick="submit()" class="btn">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
